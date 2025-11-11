@@ -1,8 +1,4 @@
-const isLocal = import.meta.env.DEV;
-
-const API_URL = isLocal
-  ? "http://127.0.0.1:8000/api/events/"
-  : "https://gpti10backend.onrender.com/api/events/";
+const API_URL = "https://gpti10backend.onrender.com/api/events/";
 
 export async function getEvents(page = 1) {
   try {
